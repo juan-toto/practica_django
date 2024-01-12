@@ -1,0 +1,14 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+    {% for s in ser %}
+        <div>
+            <h2>{{s.titulo}}</h2>
+            <h3>{{s.contenido}}</h3>
+        </div>
+    {% endfor %}
+
+{% endblock content %}
