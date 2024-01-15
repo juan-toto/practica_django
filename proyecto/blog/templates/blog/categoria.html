@@ -26,7 +26,7 @@
 
     <section>
         <div style="width: 75%; background-color: greenyellow; margin: auto; text-align: center;color: black;">
-            Categorias: {% for c in categoria %} <a href="{% url 'categoria' categoria.id %}"></a> {{c.nombre}}{% endfor %}
+            Categorias: {% for c in categoria %} - {{c.nombre}}{% endfor %}
         </div>
     </section>
 

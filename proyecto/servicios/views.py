@@ -4,5 +4,5 @@ from .models import Servicio
 # Create your views here.
 
 def servicios(request):
-    ser = Servicio,object.all()
+    ser = Servicio.objects.all()
     return render(request,'servicios/servicios.html', {'ser':ser})
